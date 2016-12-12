@@ -1,0 +1,10 @@
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\bin\Debug\Tarrot.exe
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\bin\Debug\Tarrot.pdb
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\bin\Debug\Tarrot.xml
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\obj\Debug\Tarrot.vbprojResolveAssemblyReference.cache
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\obj\Debug\Tarrot.Form1.resources
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\obj\Debug\Tarrot.Resources.resources
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\obj\Debug\Tarrot.vbproj.GenerateResource.Cache
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\obj\Debug\Tarrot.exe
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\obj\Debug\Tarrot.xml
+c:\users\goldbozi\documents\visual studio 2015\Projects\Tarrot\Tarrot\obj\Debug\Tarrot.pdb
