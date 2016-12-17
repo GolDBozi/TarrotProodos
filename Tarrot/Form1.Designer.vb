@@ -45,20 +45,29 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Button1.BackColor = System.Drawing.Color.Black
+        Me.Button1.BackColor = System.Drawing.Color.DimGray
         Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(90, 459)
+        Me.Button1.Location = New System.Drawing.Point(66, 460)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(150, 65)
         Me.Button1.TabIndex = 1
@@ -105,10 +114,10 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Button2.BackColor = System.Drawing.Color.Black
+        Me.Button2.BackColor = System.Drawing.Color.DimGray
         Me.Button2.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(1112, 448)
+        Me.Button2.Location = New System.Drawing.Point(1134, 444)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(144, 63)
         Me.Button2.TabIndex = 7
@@ -119,7 +128,7 @@ Partial Class Form1
         'Button7
         '
         Me.Button7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button7.BackColor = System.Drawing.Color.Black
+        Me.Button7.BackColor = System.Drawing.Color.DimGray
         Me.Button7.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button7.ForeColor = System.Drawing.SystemColors.Window
         Me.Button7.Location = New System.Drawing.Point(1077, 653)
@@ -133,7 +142,7 @@ Partial Class Form1
         'Button6
         '
         Me.Button6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button6.BackColor = System.Drawing.Color.Black
+        Me.Button6.BackColor = System.Drawing.Color.DimGray
         Me.Button6.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.Window
         Me.Button6.Location = New System.Drawing.Point(26, 653)
@@ -160,9 +169,9 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1339, 761)
+        Me.Panel1.Size = New System.Drawing.Size(1339, 737)
         Me.Panel1.TabIndex = 8
         '
         'Label2
@@ -175,7 +184,7 @@ Partial Class Form1
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(492, 21)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Пόσα χρόνια σπαταλάς οξυγόνο σ'αυτή τη Γη?"
+        Me.Label2.Text = "Пόσα χρόνια σπαταλάς οξυγόνο σ'αυτή τη Γη?(Νούμερο)"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label2.Visible = False
         '
@@ -200,7 +209,7 @@ Partial Class Form1
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox5.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.TextBox5.ForeColor = System.Drawing.SystemColors.Window
-        Me.TextBox5.Location = New System.Drawing.Point(438, 26)
+        Me.TextBox5.Location = New System.Drawing.Point(434, 24)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(491, 42)
@@ -212,7 +221,7 @@ Partial Class Form1
         '
         Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.PictureBox4.Image = Global.Tarrot.My.Resources.Resources.candleGIF
-        Me.PictureBox4.Location = New System.Drawing.Point(1086, 163)
+        Me.PictureBox4.Location = New System.Drawing.Point(1086, 151)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(241, 344)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -223,7 +232,7 @@ Partial Class Form1
         '
         Me.PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.PictureBox3.Image = Global.Tarrot.My.Resources.Resources.candle
-        Me.PictureBox3.Location = New System.Drawing.Point(26, 163)
+        Me.PictureBox3.Location = New System.Drawing.Point(26, 151)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(253, 344)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -265,7 +274,7 @@ Partial Class Form1
         Me.Button8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button8.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button8.ForeColor = System.Drawing.SystemColors.Window
-        Me.Button8.Location = New System.Drawing.Point(1059, 630)
+        Me.Button8.Location = New System.Drawing.Point(1059, 606)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(225, 83)
         Me.Button8.TabIndex = 8
@@ -279,7 +288,7 @@ Partial Class Form1
         Me.Button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button5.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.Window
-        Me.Button5.Location = New System.Drawing.Point(1059, 630)
+        Me.Button5.Location = New System.Drawing.Point(1059, 606)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(225, 83)
         Me.Button5.TabIndex = 6
@@ -293,7 +302,7 @@ Partial Class Form1
         Me.Button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button4.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.Window
-        Me.Button4.Location = New System.Drawing.Point(1059, 630)
+        Me.Button4.Location = New System.Drawing.Point(1059, 606)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(225, 83)
         Me.Button4.TabIndex = 5
@@ -307,7 +316,7 @@ Partial Class Form1
         Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button3.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.Window
-        Me.Button3.Location = New System.Drawing.Point(1059, 630)
+        Me.Button3.Location = New System.Drawing.Point(1059, 606)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(225, 83)
         Me.Button3.TabIndex = 0
@@ -318,6 +327,7 @@ Partial Class Form1
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox2.Image = Global.Tarrot.My.Resources.Resources._11
         Me.PictureBox2.Location = New System.Drawing.Point(1077, 76)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(239, 350)
@@ -330,23 +340,88 @@ Partial Class Form1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = Global.Tarrot.My.Resources.Resources._11
         Me.PictureBox1.Location = New System.Drawing.Point(26, 76)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(242, 350)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
+        '
+        'Timer1
+        '
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(1118, 50)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(160, 23)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "Κάρτα για το Μέλλον"
+        Me.Label3.Visible = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(80, 46)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(154, 23)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Κάρτα για το Παρόν"
+        Me.Label5.Visible = False
+        '
+        'Timer2
+        '
+        '
+        'MenuStrip2
+        '
+        Me.MenuStrip2.BackColor = System.Drawing.SystemColors.ControlText
+        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3})
+        Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip2.Name = "MenuStrip2"
+        Me.MenuStrip2.Size = New System.Drawing.Size(1339, 24)
+        Me.MenuStrip2.TabIndex = 14
+        Me.MenuStrip2.Text = "MenuStrip2"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(122, 20)
+        Me.ToolStripMenuItem1.Text = "About Programmer"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(82, 20)
+        Me.ToolStripMenuItem2.Text = "About Tarot"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(72, 20)
+        Me.ToolStripMenuItem3.Text = "Copyright"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Desktop
-        Me.BackgroundImage = Global.Tarrot.My.Resources.Resources.texture
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1339, 761)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MenuStrip2)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox2)
@@ -355,7 +430,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Name = "Form1"
         Me.ShowIcon = False
         Me.Text = "Totally Serious Tarot"
@@ -365,6 +440,8 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip2.ResumeLayout(False)
+        Me.MenuStrip2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -391,4 +468,12 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Timer2 As Timer
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
 End Class
