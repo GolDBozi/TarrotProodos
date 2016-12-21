@@ -117,6 +117,16 @@ Tarrot
   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
 </summary>
 </member>
+<member name="P:Tarrot.My.Resources.Resources.panelback">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Tarrot.My.Resources.Resources.panelback2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Tarrot.My.Resources.Resources.red_curtain">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

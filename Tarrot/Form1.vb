@@ -4,17 +4,13 @@ Public Class Form1
     Private str, str1, onoma As String
     Private a, a1, b, c As Integer
     Dim random1, random2, random3 As Byte
-
-
-
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'entoles gia to 1to koumpi 
-
 
         Randomize()
         random1 = (Rnd() * 9) + 1
 
-        If random1 = 1 And random2 <> 1 Then
+        If random1 = 1 Then
 
             'For b = 0 To 10
             '    Me.PictureBox1.Size = New Size(PictureBox1.Size.Width - 2, PictureBox1.Size.Height)
@@ -44,7 +40,7 @@ Public Class Form1
             ' TextBox1.Text = z
 
         End If
-        If random1 = 2 And random2 <> 2 Then
+        If random1 = 2 Then
 
             'For b = 0 To 10
             '    Me.PictureBox1.Size = New Size(PictureBox1.Size.Width - 2, PictureBox1.Size.Height)
@@ -73,7 +69,7 @@ Public Class Form1
             a = Len(str) + 1
             a = 1
         End If
-        If random1 = 3 And random2 <> 3 Then
+        If random1 = 3 Then
 
             'For b = 0 To 10
             '    Me.PictureBox1.Size = New Size(PictureBox1.Size.Width - 2, PictureBox1.Size.Height)
@@ -102,7 +98,7 @@ Public Class Form1
             a = Len(str) + 1
             a = 1
         End If
-        If random1 = 4 And random2 <> 4 Then
+        If random1 = 4 Then
 
             '    For b = 0 To 10
             '        Me.PictureBox1.Size = New Size(PictureBox1.Size.Width - 2, PictureBox1.Size.Height)
@@ -132,7 +128,7 @@ Public Class Form1
             a = Len(str) + 1
             a = 1
         End If
-        If random1 = 5 And random2 <> 5 Then
+        If random1 = 5 Then
 
             'For b = 0 To 10
             '    Me.PictureBox1.Size = New Size(PictureBox1.Size.Width - 2, PictureBox1.Size.Height)
@@ -161,7 +157,7 @@ Public Class Form1
             a = Len(str) + 1
             a = 1
         End If
-        If random1 = 6 And random2 <> 6 Then
+        If random1 = 6 Then
 
             'For b = 0 To 10
             '    Me.PictureBox1.Size = New Size(PictureBox1.Size.Width - 2, PictureBox1.Size.Height)
@@ -190,7 +186,7 @@ Public Class Form1
             a = Len(str) + 1
             a = 1
         End If
-        If random1 = 7 And random2 <> 7 Then
+        If random1 = 7 Then
             PictureBox1.Image = My.Resources._7
             Dim i As String = "Η παρούσα στιγμή θα σου φερει ολοκλήρωση για κάποια ευχή ή η επιθυμία για αλλαγή σκηνικού.Για να βρεις ικανοποίηση πρέπει να αποδεχτείς τις ιδέες των άλλων να είναι ισάξιες με τις δικές σου. Είναι η αίσθηση της εσωτερικής ισορροπίας και βαθύτερης κατανόησης."
             str = i
@@ -198,21 +194,21 @@ Public Class Form1
             a = 1
         End If
 
-        If random1 = 8 And random2 <> 8 Then
+        If random1 = 8 Then
             PictureBox1.Image = My.Resources._8
             Dim o As String = "Να θυμάστε ότι η πράξη του να δίνεις βοήθεια,είναι πιο σημαντική από το πρόσωπο που βοηθάτε.Η καθε αλλαγή είναι ενας μικρός θάνατος,όπως όταν πρέπει να πεθάνει το παλιό για να δημιουργηθεί το καινούργιο.Πρέπει να δώσετε σημασία στις αποφάσεις σας."
             str = o
             a = Len(str) + 1
             a = 1
         End If
-        If random1 = 9 And random2 <> 9 Then
+        If random1 = 9 Then
             PictureBox1.Image = My.Resources._9
             Dim p As String = "Υπάρχει ένα γεγονός πέραν της επιρροής σας που θα σας αλλάξει την ζωή.Δεν είναι σίγουρο αν είναι καλό ή οχι,αλλά  αποφύγετε τις υπερβολικές συμπεριφορές και μείνετε πιστοί στον εαυτό σας.Είναι η προειδοποίηση για μια αναπόφευκτη κατάσταση αλλά δεν εγγυάται την αποφυγή της. "
             str = p
             a = Len(str) + 1
             a = 1
         End If
-        If random1 = 10 And random2 <> 10 Then
+        If random1 = 10 Then
             PictureBox1.Image = My.Resources._10
             Dim k As String = "Υπάρχει η πιθανότητα για μια καινούργια φιλία ή σχέση ,η οποία θα σε οδηγήσει σε ευτυχία και ικανοποίηση,μην τα παρατήσεις και θα οδηγηθείς σε επιτυχία. "
             str = k
@@ -258,6 +254,7 @@ Public Class Form1
         'an einai keno na mhn emfanistei to koumpi
         If TextBox3.Text = (vbEmpty).ToString Then
             Button4.Visible = False
+
         Else
             Button4.Visible = True
         End If
@@ -273,8 +270,9 @@ Public Class Form1
                 Label1.Visible = False
                 Label2.Visible = True
                 TextBox3.Visible = False
-                TextBox5.Visible = True
-            End If
+            TextBox5.Visible = True
+            Panel1.BackgroundImage = My.Resources.panelback
+        End If
 
 
     End Sub
@@ -285,6 +283,11 @@ Public Class Form1
         Label1.Visible = True
         TextBox4.Visible = False
         Button5.Visible = False
+        Panel1.BackgroundImage = My.Resources.panelback2
+        PictureBox3.Visible = False
+        PictureBox4.Visible = False
+
+
     End Sub
 
     Public Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -293,7 +296,7 @@ Public Class Form1
         random2 = (Rnd() * 9) + 1
         Do While random2 = random1
 
-            random2 = (Rnd() * 5) + 1
+            random2 = (Rnd() * 9) + 1
         Loop
         If random2 = 1 And random1 <> 1 Then
             PictureBox2.Image = My.Resources._1
@@ -589,7 +592,7 @@ Public Class Form1
         Randomize()
         random2 = (Rnd() * 9) + 1
         Do While random2 = random1
-            random2 = (Rnd() * 5) + 1
+            random2 = (Rnd() * 9) + 1
         Loop
         If random2 = 1 And random1 <> 1 Then
             PictureBox2.Image = My.Resources._1

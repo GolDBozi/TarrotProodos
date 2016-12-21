@@ -221,9 +221,9 @@ Partial Class Form1
         '
         Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.PictureBox4.Image = Global.Tarrot.My.Resources.Resources.candleGIF
-        Me.PictureBox4.Location = New System.Drawing.Point(1086, 151)
+        Me.PictureBox4.Location = New System.Drawing.Point(1122, 113)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(241, 344)
+        Me.PictureBox4.Size = New System.Drawing.Size(194, 370)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 4
         Me.PictureBox4.TabStop = False
@@ -232,9 +232,9 @@ Partial Class Form1
         '
         Me.PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.PictureBox3.Image = Global.Tarrot.My.Resources.Resources.candle
-        Me.PictureBox3.Location = New System.Drawing.Point(26, 151)
+        Me.PictureBox3.Location = New System.Drawing.Point(26, 113)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(253, 344)
+        Me.PictureBox3.Size = New System.Drawing.Size(190, 345)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 3
         Me.PictureBox3.TabStop = False

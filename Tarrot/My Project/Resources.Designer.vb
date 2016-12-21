@@ -252,6 +252,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property panelback() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("panelback", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property panelback2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("panelback2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property red_curtain() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("red_curtain", resourceCulture)
